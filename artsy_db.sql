@@ -1,7 +1,5 @@
-DROP DATABASE IF artsy_db;
+DROP DATABASE IF EXISTS artsy_db;
 CREATE DATABASE artsy_db;
-
-
 
 USE artsy_db;
 
