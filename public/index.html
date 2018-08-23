@@ -27,8 +27,8 @@
               <i class="material-icons">menu</i>
             </a>
             <ul class="right hide-on-med-and-down">
-             <li><a href="#signIn">Sign In</a></li>
-             <li><a href="#signUp">Sign Up</a></li>
+             <li><a class="waves-effect waves-light btn-flat modal-trigger" href="#modal1">Log In</a></li>
+             <li><a class="waves-effect waves-light btn-flat modal-trigger" href="#modal1">Sign Up</a></li>
              <li><a href="#gallery">Gallery</a></li>
              <li><a href="#cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i>
              </a></li>
@@ -38,20 +38,57 @@
       </nav>
     </div>
     <ul class="sidenav" id="nav-mobile">
-        <li><a href="#signIn">Sign In</a></li>
+        <li><a href="#signIn">Log In</a></li>
         <li><a href="#signUp">Sign Up</a></li>
         <li><a href="#gallery">Gallery</a></li>
         <li><a href="#cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i>
         </a></li>
     </ul>
  
+        <!-- Modal Trigger -->
+        <!-- <button class="waves-effect waves-light btn modal-trigger" data-target="modal1">Add Artwork</button> -->
+      
+        <!-- Modal Structure -->
+        <div id="modal1" class="modal">
+          <div class="modal-content">
+            <h4>Welcome!</h4>
+      
+            <div class="row">
+              <form class="col s12">
+                  <div class="row modal-form-row">
+                    <div class="input-field col s12">
+                      <!-- <input id="username" type="text" class="validate">
+                      <label for="username">Username</label> -->
+                      <label for="username">Email:</label>
+                      <input id="username" type="email" placeholder="your email" required>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="input-field col s12">
+                      <!-- <input id="Password" type="text" class="validate">
+                      <label for="Password">Password</label> -->
+                      <label for="password">Password:</label>
+                      <input id="password" type="password" placeholder="your password" required>
+                    </div>  
+                  </div>          
+              </form>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <a class=" modal-action modal-close waves-effect waves-green btn-flat">Submit</a>
+          </div>
+        </div>
+
+
+
+
      <!-- Modal Structure --> 
      <div id="modal1" class="modal">
-     <div class="modal-content">
-      <h4>Username</h4>
-      <p>Password</p>
-     </div> 
-
+        <div class="modal-content">
+        <h4>Username</h4>
+        <p>Password</p>
+        </div> 
+      </div>
     <!-- // SECTION FOR SLIDER -->
     <section class="slider">
         <div class="slider">
@@ -164,6 +201,10 @@
             interval: 15000,
         });
     });
+    document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.modal');
+    var instances = M.Modal.init(elems);
+  });
 
     </script>
   </body>
