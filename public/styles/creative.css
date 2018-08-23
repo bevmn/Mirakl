@@ -14,3 +14,8 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
+.brand-logo {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+
+}
