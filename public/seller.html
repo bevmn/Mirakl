@@ -3,11 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<<<<<<< HEAD
-    <title>Artsy/Mipicasso</title>
-=======
     <title>Artsy</title>
->>>>>>> master
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
@@ -26,7 +22,6 @@
       <nav class="teal lighten-4">
         <div class="container">
           <div class= "nav-wrapper">
-<<<<<<< HEAD
             <a href="#" class="brand-logo">Artsy</a>
             <a href="#" data-target="nav-mobile" class="sidenav-trigger">
               <i class="material-icons">menu</i>
@@ -36,17 +31,6 @@
              <li><a href="#signUp">Sign Up</a></li>
              <li><a href="#gallery">Gallery</a></li>
              <li><a href="#cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i>
-=======
-            <a href="#" class="brand-logo center"><h1>Artsy</h1></a>
-            <a href="#" data-target="nav-mobile" class="sidenav-trigger">
-              <i class="material-icons">menu</i>
-            </a>
-            <ul class="left hide-on-med-and-down">
-             <li><a class="waves-effect waves-light btn-flat modal-trigger" href="#modal1">Log In</a></li>
-             <li><a class="waves-effect waves-light btn-flat modal-trigger" href="#modal1">Sign Up</a></li>
-             <li><a href="gallery.html">Gallery</a></li>
-             <li><a href="cart.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i>
->>>>>>> master
              </a></li>
             </ul>
           </div>
@@ -54,57 +38,40 @@
       </nav>
     </div>
     <ul class="sidenav" id="nav-mobile">
-<<<<<<< HEAD
         <li><a href="#signIn">Sign In</a></li>
         <li><a href="#signUp">Sign Up</a></li>
         <li><a href="#gallery">Gallery</a></li>
         <li><a href="#cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i>
         </a></li>
     </ul>
- 
-     <!-- Modal Structure --> 
-     <div id="modal1" class="modal">
-     <div class="modal-content">
-      <h4>Username</h4>
-      <p>Password</p>
-     </div> 
-
-=======
-        <li><a href="#signIn">Log In</a></li>
-        <li><a href="#signUp">Sign Up</a></li>
-        <li><a href="buyer.html">Buyers</a></li>
-        <li><a href="seller.html">Sellers</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="cart.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i>
-        </a></li>
-    </ul>
- 
         <!-- Modal Trigger -->
-        <!-- <button class="waves-effect waves-light btn modal-trigger" data-target="modal1">Add Artwork</button> -->
+        <button class="waves-effect waves-light btn modal-trigger" data-target="modal1">Add Artwork</button>
       
         <!-- Modal Structure -->
         <div id="modal1" class="modal">
           <div class="modal-content">
-            <h4>Welcome!</h4>
+            <h4>Add an Image</h4>
       
             <div class="row">
               <form class="col s12">
-                  <div class="row modal-form-row">
-                    <div class="input-field col s12">
-                      <!-- <input id="username" type="text" class="validate">
-                      <label for="username">Username</label> -->
-                      <label for="username">Email:</label>
-                      <input id="username" type="email" placeholder="your email" required>
-                    </div>
+                <div class="row modal-form-row">
+                  <div class="input-field col s12">
+                    <input id="image_url" type="text" class="validate">
+                    <label for="image_url">Image URL</label>
                   </div>
-                  <div class="row">
-                    <div class="input-field col s12">
-                      <!-- <input id="Password" type="text" class="validate">
-                      <label for="Password">Password</label> -->
-                      <label for="password">Password:</label>
-                      <input id="password" type="password" placeholder="your password" required>
-                    </div>  
-                  </div>          
+                </div>
+                <div class="row">
+                  <div class="input-field col s12">
+                    <input id="image_title" type="text" class="validate">
+                    <label for="image_title">Title</label>
+                  </div>
+                </div>       
+                <div class="row">
+                  <div class="input-field col s12">
+                    <textarea id="image_description" type="text" class="materialize-textarea validate"></textarea>
+                    <label for="image_description">Description</label>
+                  </div>
+                </div>             
               </form>
             </div>
           </div>
@@ -112,31 +79,19 @@
             <a class=" modal-action modal-close waves-effect waves-green btn-flat">Submit</a>
           </div>
         </div>
-
-
-
-
-     <!-- Modal Structure --> 
-     <div id="modal1" class="modal">
-        <div class="modal-content">
-        <h4>Username</h4>
-        <p>Password</p>
-        </div> 
-      </div>
->>>>>>> master
     <!-- // SECTION FOR SLIDER -->
-    <section class="slider">
+    <!-- <section class="slider">
         <div class="slider">
             <ul class="slides">
               <li>
-                <img src="img/abstract-art-brick-wall-63952.jpg"> <!-- random image -->
+                <img src="img/abstract-art-brick-wall-63952.jpg"> 
                 <div class="caption center-align">
                   <h2>Center Aligned Caption</h2>
                   <h5 class="light grey-text text-lighten-3 hide-on-small-only">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum labore molestias, iusto non accusantium obcaecati!</h5>
                 </div>
               </li>
               <li>
-                <img src="img/art-color-colorful-19680.jpg"> <!-- random image -->
+                <img src="img/art-color-colorful-19680.jpg"> 
                 <div class="caption left-align">
                   <h2>Left Aligned Caption</h2>
                   <h5 class="light grey-text text-lighten-3 
@@ -144,14 +99,14 @@
                 </div>
               </li>
               <li>
-                <img src="img/IMG_2202.jpg"> <!-- random image -->
+                <img src="img/IMG_2202.jpg"> 
                 <div class="caption right-align">
                   <h2>Right Aligned Caption</h2>
                   <h5 class="light grey-text text-lighten-3 hide-on-small-only">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi dignissimos illo harum deserunt tempore iusto!</h5>
                 </div>
               </li>
               <li>
-                <img src="img/IMG_2204.jpg"> <!-- random image -->
+                <img src="img/IMG_2204.jpg"> 
                 <div class="caption center-align">
                   <h2>Center Aligned Caption</h2>
                   <h5 class="light grey-text text-lighten-3 hide-on-small-only">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione minus, reiciendis facere possimus nihil.</h5>
@@ -159,57 +114,53 @@
               </li>
             </ul>
           </div>
-    </section>
+    </section> -->
 
     <!-- SECTION CONNECT WITH US -->
-    <section class="section section-follow teal lighten-4 black-text center">
-      <div class="container">
-         <div class="row">
-            <div class="col s12">
+    <!-- <section class="section section-follow teal lighten-4 black-text center">
+
+    </section> -->
+        <div class="seller-content">
+        content
+        </div>
+        <footer class="footer"></footer>
+
+    <footer class="section teal lighten-5 black-text" id="seller-footer">
+      <p class="col 6 text left">Artsy &copy; 2018</p>
+        <div class="container">
+          <div class="row">
+            <div class="col s6 m6 l6">
                 <h4>Connect</h4>
-                <a href="#" class="black-text center">
-                  <i class="fab fa-facebook fa-2x"></i>
+                <a href="#" class="black-text right">
+                    <i class="fab fa-facebook fa-2x"></i>
                 </a>
-                <a href="#" class="black-text center">
-                  <i class="fab fa-twitter fa-2x"></i>
+                <a href="#" class="black-text right">
+                    <i class="fab fa-twitter fa-2x"></i>
                 </a>
-                <a href="#" class="black-text center">
-                  <i class="fab fa-google plus fa-2x"></i>
+                <a href="#" class="black-text right">
+                    <i class="fab fa-google plus fa-2x"></i>
                 </a>
-                <a href="#" class="black-text center">
-                  <i class="fab fa-linkedin fa-2x"></i>
+                <a href="#" class="black-text right">
+                    <i class="fab fa-linkedin fa-2x"></i>
                 </a>
-                <a href="#" class="black-text center">
-                  <i class="fab fa-pinterest fa-2x"></i>
+                <a href="#" class="black-text right">
+                    <i class="fab fa-pinterest fa-2x"></i>
                 </a>
             </div>
-         </div>
-      </div>
-    </section>
-
-<!-- 
-    <footer class="section teal lighten-5 black-text center">
-        <p class="flow-text">Artsy &copy; 2018</p>
-    </footer> -->
+          </div>
+        </div>
+    </footer>
 
   <!-- <nav> 
          <div class="nav-wrapper">
           <a href="#" class="brand-logo">Mipicasso</a>
           <ul id="nav-mobile" class="right hide-on-med-and-down">
             <li>
-<<<<<<< HEAD
-                <!-- Modal Trigger -->
-  <!-- <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Sign In</a> -->
-
- 
-    <div class="modal-footer">
-=======
                Modal Trigger -->
   <!-- <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Sign In</a> -->
 
  
     <!-- <div class="modal-footer">
->>>>>>> master
       <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
     </div> -->
   <!-- </div>
@@ -229,8 +180,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
     <script>
     // SideNav
-    // const SideNav = document.querySelector(".sidenav");
-    // M.Sidenav.init(sideNav, {});
     document.addEventListener('DOMContentLoaded', function() {
         var elems = document.querySelectorAll('.sidenav');
         var instances = M.Sidenav.init(elems);
@@ -244,15 +193,11 @@
             interval: 15000,
         });
     });
-<<<<<<< HEAD
-=======
     document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.modal');
     var instances = M.Modal.init(elems);
   });
->>>>>>> master
 
     </script>
   </body>
 </html>
-      

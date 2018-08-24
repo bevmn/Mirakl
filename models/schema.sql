@@ -1,14 +1,12 @@
-DROP DATABASE IF artsy_db;
+DROP DATABASE IF EXISTS artsy_db;
 CREATE DATABASE artsy_db;
-
-
 
 USE artsy_db;
 
 
   
 
-CREATE TABLE art;
+CREATE TABLE art
 
   id INT NOT NULL AUTO_INCREMENT,
   item_name VARCHAR(100) NULL,
@@ -24,20 +22,20 @@ CREATE TABLE art;
 
 
 INSERT INTO art(item_name, category, price, stock_quantity)
-VALUES ("Glo", "classic", "Rembrandt" 1199.00, 4);
+VALUES ("Glo", "classic", "Unknown", 399.00, 1);
 
 INSERT INTO art(item_name, category, price, stock_quantity)
-VALUES ();
+VALUES ("When Harry Met Sally Movie Poster", "Entertainment", "Unknown", 69.99, 2);
 
 INSERT INTO art(item_name, category, price, stock_quantity)
-VALUES ();
+VALUES ("Abby Road", "Entertainment", "Lain Macmilan", 400.00, 1 );
 
 INSERT INTO art(item_name, category, price, stock_quantity)
-VALUES ();
+VALUES (J);
 
 
 
-CREATE TABLE seller;
+CREATE TABLE seller
 
   id INT NOT NULL AUTO_INCREMENT,
   seller_name VARCHAR(100) NULL,
@@ -55,22 +53,22 @@ CREATE TABLE seller;
 
 
 
-INSERT INTO customer(customer_name, address_1, address_2, phone_number, city, state, zip)
+INSERT INTO seller(customer_name, address_1, address_2, phone_number, city, state, zip)
 VALUES ("Bev Nelsen", "141 4th St. E", "Apt 634" 3082504580, "St. Paul", MN, 55101);
 
-INSERT INTO customer(customer_name, address_1, address_2, phone_number, city, state, zip)
-VALUES ();
+INSERT INTO seller(customer_name, address_1, address_2, phone_number, city, state, zip)
+VALUES ("Christopher Bailey");
 
-INSERT INTO customer(customer_name, address_1, address_2, phone_number, city, state, zip)
-VALUES ();
+INSERT INTO seller(customer_name, address_1, address_2, phone_number, city, state, zip)
+VALUES ("Jon Wells");
 
-INSERT INTO customer(customer_name, address_1, address_2, phone_number, city, state, zip)
-VALUES ();
-
-
+INSERT INTO seller(customer_name, address_1, address_2, phone_number, city, state, zip)
+VALUES ("Cherry Vang");
 
 
-CREATE TABLE customer;
+
+
+CREATE TABLE customer
 
   id INT NOT NULL AUTO_INCREMENT,
   customer_name VARCHAR(100) NULL,
@@ -88,13 +86,13 @@ CREATE TABLE customer;
 
 
 INSERT INTO customer(customer_name, address_1, address_2, phone_number, city, state, zip)
-VALUES ("John Cusak", "340 Sedgewick", "Unit 8A" 5185551212, "Chicago", IL, 60610);
+VALUES ("John Cusak", "340 Sedgewick", "Unit 8A" 5185551212, "Chicago", "IL", 60610);
 
 INSERT INTO customer(customer_name, address_1, address_2, phone_number, city, state, zip)
-VALUES ();
+VALUES ("Steve Jobs", "111 Apple Way", "", 3334441111, "Cupertino", "CA", 94024);
 
 INSERT INTO customer(customer_name, address_1, address_2, phone_number, city, state, zip)
-VALUES ();
+VALUES ("Rodney Strong", "12 Vinyard Lane", "Suite 1", 3657771998, "Napa", "CA", 94558);
 
 INSERT INTO customer(customer_name, address_1, address_2, phone_number, city, state, zip)
-VALUES ();
+VALUES ("Brooks Koepka", "","", 9026781234, "West Palm Beach", "FL", 33401);
