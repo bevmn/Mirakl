@@ -3,14 +3,39 @@ body, html {
 }
 
 body { 
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
     /* The image used */
     background-image: url("/img/abstract-acrylic-art-1000366.jpg");
-
     /* Full height */
     height: 100%; 
-
     /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
+main {
+    flex: 1 0 auto;
+  }
+.brand-logo {
+    font-family: cursive;
+    font-size: 40px;
+    font-weight: 300;
+
+}
+.section-follow .fa-2x{
+    margin: 5px 10px;
+  
+  }
+
+
+
+  .content {
+    flex: 1 0 auto;
+  }
+  .footer {
+    flex-shrink: 0;
+  }  
+
+    
