@@ -15,6 +15,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 main {
     flex: 1 0 auto;
   }
@@ -26,16 +27,21 @@ main {
 }
 .section-follow .fa-2x{
     margin: 5px 10px;
-  
-  }
-
-
-
-  .content {
-    flex: 1 0 auto;
-  }
-  .footer {
     flex-shrink: 0;
-  }  
+  
+}
 
+.content {
+    flex: 1 0 auto;
+}
+
+.footer {
+    flex-shrink: 0;
+}
+
+#searchbar {
+    position: relative;
+    text-align: center;
+
+}
     
