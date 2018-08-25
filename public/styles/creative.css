@@ -2,15 +2,6 @@ body, html {
     height: 100%;
 }
 
-<<<<<<< HEAD
-.bg { 
-    /* The image used */
-    background-image: url("/img/abstract-acrylic-art-1000366.jpg");
-
-    /* Full height */
-    height: 100%; 
-
-=======
 body { 
     display: flex;
     min-height: 100vh;
@@ -19,15 +10,12 @@ body {
     background-image: url("/img/abstract-acrylic-art-1000366.jpg");
     /* Full height */
     height: 100%; 
->>>>>>> master
     /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-<<<<<<< HEAD
 }
-=======
-}
+
 main {
     flex: 1 0 auto;
   }
@@ -39,17 +27,21 @@ main {
 }
 .section-follow .fa-2x{
     margin: 5px 10px;
-  
-  }
-
-
-
-  .content {
-    flex: 1 0 auto;
-  }
-  .footer {
     flex-shrink: 0;
-  }  
+  
+}
 
+.content {
+    flex: 1 0 auto;
+}
+
+.footer {
+    flex-shrink: 0;
+}
+
+#searchbar {
+    position: relative;
+    text-align: center;
+
+}
     
->>>>>>> master

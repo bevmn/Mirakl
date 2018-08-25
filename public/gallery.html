@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Artsy</title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/styles.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/creative.css" />
+    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl"
+    crossorigin="anonymous"></script>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+
+  <body>
+    <div class="navbar-fixed">
+      <nav class="teal lighten-4">
+        <div class="container">
+          <div class= "nav-wrapper">
+            <a href="#" class="brand-logo">Artsy</a>
+            <a href="#" data-target="nav-mobile" class="sidenav-trigger">
+              <i class="material-icons">menu</i>
+            </a>
+            <ul class="right hide-on-med-and-down">
+             <li><a href="#signIn">Sign In</a></li>
+             <li><a href="#signUp">Sign Up</a></li>
+             <li><a href="#gallery">Gallery</a></li>
+             <li><a href="#cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i>
+             </a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <ul class="sidenav" id="nav-mobile">
+        <li><a href="#signIn">Sign In</a></li>
+        <li><a href="#signUp">Sign Up</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i>
+        </a></li>
+    </ul>
+        <!-- Modal Trigger -->
+        <button class="waves-effect waves-light btn modal-trigger" data-target="modal1">Add Artwork</button>
+      
+        <!-- Modal Structure -->
+        <div id="modal1" class="modal">
+          <div class="modal-content">
+            <h4>Add an Image</h4>
+      
+            <div class="row">
+              <form class="col s12">
+                <div class="row modal-form-row">
+                  <div class="input-field col s12">
+                    <input id="image_url" type="text" class="validate">
+                    <label for="image_url">Image URL</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-field col s12">
+                    <input id="image_title" type="text" class="validate">
+                    <label for="image_title">Title</label>
+                  </div>
+                </div>       
+                <div class="row">
+                  <div class="input-field col s12">
+                    <textarea id="image_description" type="text" class="materialize-textarea validate"></textarea>
+                    <label for="image_description">Description</label>
+                  </div>
+                </div>             
+              </form>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <a class=" modal-action modal-close waves-effect waves-green btn-flat">Submit</a>
+          </div>
+        </div>
+
+<!-- EMPTY DIV TO POST PICTURES INTO AND PULL FROM/POST TO THE DATABASE-->
+        <div class="gallery-content"></div>
+        
+
+    <footer class="section teal lighten-5 black-text" id="seller-footer">
+      <p class="col 6 text left">Artsy &copy; 2018</p>
+        <div class="container">
+          <div class="row">
+            <div class="col s6 m6 l6">
+                <h4>Connect</h4>
+                <a href="#" class="black-text right">
+                    <i class="fab fa-facebook fa-2x"></i>
+                </a>
+                <a href="#" class="black-text right">
+                    <i class="fab fa-twitter fa-2x"></i>
+                </a>
+                <a href="#" class="black-text right">
+                    <i class="fab fa-google plus fa-2x"></i>
+                </a>
+                <a href="#" class="black-text right">
+                    <i class="fab fa-linkedin fa-2x"></i>
+                </a>
+                <a href="#" class="black-text right">
+                    <i class="fab fa-pinterest fa-2x"></i>
+                </a>
+            </div>
+          </div>
+        </div>
+    </footer>
+
+  <!-- <nav> 
+         <div class="nav-wrapper">
+          <a href="#" class="brand-logo">Mipicasso</a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li>
+               Modal Trigger -->
+  <!-- <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Sign In</a> -->
+
+ 
+    <!-- <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+    </div> -->
+  <!-- </div>
+            </li>
+            <li><a href="badges.html">Sign Up</a></li>
+            <li><a href="collapsible.html">Search</a></li>
+          </ul>
+        </div>
+      </nav> -->
+      <!-- <script>    
+        document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.modal');
+        var instances = M.Modal.init(elems, options);
+        });
+      </script>  -->
+    <!--JavaScript at end of body for optimized loading-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+    <script>
+    // SideNav
+    document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.sidenav');
+        var instances = M.Sidenav.init(elems);
+    });
+    // SLIDER
+    document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.slider');
+        var instances = M.Slider.init(elems, {
+            indicators: false,
+            height: 500,
+            interval: 15000,
+        });
+    });
+    document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.modal');
+    var instances = M.Modal.init(elems);
+  });
+
+    </script>
+  </body>
+</html>
