@@ -1,7 +1,7 @@
 // Get references to page elements
 var $exampleText = $("#example-text");
 var $exampleDescription = $("#example-description");
-var $auth = $("#auth");
+var $signUp = $("#signUp");
 var $logIn = $("#logIn");
 var $exampleList = $("#example-list");
 
