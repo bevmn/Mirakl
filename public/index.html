@@ -22,33 +22,47 @@
       <nav class="teal lighten-4">
         <div class="container">
           <div class= "nav-wrapper">
-            <a href="#" class="brand-logo"><h1>Artsy</h1></a>
+            <a href="#" class="left brand-logo" id="brand-logo"><h1>Artsy</h1></a>
             <a href="#" data-target="nav-mobile" class="sidenav-trigger">
-              <i class="material-icons">menu</i>
-            </a>
-            <ul class="right hide-on-med-and-down">
-             <li><a class="waves-effect waves-light btn-flat modal-trigger" href="#modal1">Log In</a></li>
-             <li><a class="waves-effect waves-light btn-flat modal-trigger" href="#modal1">Sign Up</a></li>
-             <li><a href="gallery.html">GALLERY</a></li>
-             <li><a href="cart.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i>
-             </a></li>
+              <i class="material-icons">menu</i></a>
+             <ul class="right hide-on-med-and-down">
+                <li><a class="waves-effect waves-light btn-flat modal-trigger" href="#modal1">Log In</a></li>
+                <li><a class="waves-effect waves-light btn-flat modal-trigger" href="#modal2">Sign Up</a></li>
+                <li><a class="waves-effect waves-light btn-flat" href="gallery.html">GALLERY</a></li>
+                <li><a class="waves-effect waves-light btn-flat" href="sellers.html">SELLERS</a></li>
+                <li><a href="cart.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+                <li>                    
+                  <nav>
+                    <div class="teal lighten-4 nav-wrapper" id="searchbar">
+                      <form>
+                        <div class="input-field">
+                          <input id="search" type="search" required>
+                          <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                          <i class="material-icons">close</i>
+                        </div>
+                      </form>
+                    </div>
+                  </nav>
+                </li>
             </ul>
           </div>
         </div>
       </nav>
     </div>
     <ul class="sidenav" id="nav-mobile">
-        <li><a href="#signIn">Log In</a></li>
-        <li><a href="#signUp">Sign Up</a></li>
-        <li><a href="seller.html">Sellers</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
+        <li><a class="waves-effect waves-light btn-flat modal-trigger" href="#modal1">Log In</a></li>
+        <li><a class="waves-effect waves-light btn-flat modal-trigger" href="#modal2">Sign Up</a></li>
+        <li><a class="waves-effect waves-light btn-flat" href="seller.html">SELLERS</a></li>
+        <li><a class="waves-effect waves-light btn-flat" href="gallery.html">GALLERY</a></li>
         <li><a href="cart.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i>
         </a></li>
     </ul>
  
         <!-- Modal Trigger -->
         <!-- <button class="waves-effect waves-light btn modal-trigger" data-target="modal1">Add Artwork</button> -->
-      
+<!-- -------------------------------------------------------------------------------------- -->
+<!-- MODAL POPUP FOR USERS LOGGING IN-->
+<!-- -------------------------------------------------------------------------------------- -->
         <!-- Modal Structure -->
         <div id="modal1" class="modal">
           <div class="modal-content">
@@ -60,27 +74,29 @@
                     <div class="input-field col s12">
                       <!-- <input id="username" type="text" class="validate">
                       <label for="username">Username</label> -->
-                      <label for="username">Email:</label>
-                      <input id="username" type="email" placeholder="your email" required>
+                      <label for="loginUsername">Email:</label>
+                      <input id="loginUsername" type="email" placeholder="your email" required>
                     </div>
                   </div>
                   <div class="row">
                     <div class="input-field col s12">
                       <!-- <input id="Password" type="text" class="validate">
                       <label for="Password">Password</label> -->
-                      <label for="password">Password:</label>
-                      <input id="password" type="password" placeholder="your password" required>
+                      <label for="loginPassword">Password:</label>
+                      <input id="loginPassword" type="password" placeholder="your password" required>
                     </div>  
                   </div>          
               </form>
             </div>
           </div>
           <div class="modal-footer">
-            <a id='signUp' class=" modal-action modal-close waves-effect waves-green btn-flat">Submit</a>
+            <a id='logIn' class=" modal-action modal-close waves-effect waves-green btn-flat">Submit</a>
           </div>
         </div>
-
-        <div id="modal1" class="modal">
+<!-- -------------------------------------------------------------------------------------- -->
+<!-- MODAL POPUP FOR FIRST TIME USERS SIGNING UP -->
+<!-- -------------------------------------------------------------------------------------- -->
+        <div id="modal2" class="modal">
             <div class="modal-content">
               <h4>Welcome!</h4>
         
@@ -90,23 +106,23 @@
                       <div class="input-field col s12">
                         <!-- <input id="username" type="text" class="validate">
                         <label for="username">Username</label> -->
-                        <label for="username">Email:</label>
-                        <input id="username" type="email" placeholder="your email" required>
+                        <label for="signUpUser">Email:</label>
+                        <input id="signUpUser" type="email" placeholder="your email" required>
                       </div>
                     </div>
                     <div class="row">
                       <div class="input-field col s12">
                         <!-- <input id="Password" type="text" class="validate">
                         <label for="Password">Password</label> -->
-                        <label for="password">Password:</label>
-                        <input id="password" type="password" placeholder="your password" required>
+                        <label for="signUpPassword">Password:</label>
+                        <input id="signUpPassword" type="password" placeholder="your password" required>
                       </div>  
                     </div>          
                 </form>
               </div>
             </div>
             <div class="modal-footer">
-              <a id='auth' class=" modal-action modal-close waves-effect waves-green btn-flat">Submit</a>
+              <a id='signUp' class=" modal-action modal-close waves-effect waves-green btn-flat">Submit</a>
             </div>
           </div>
 
