@@ -12,6 +12,9 @@
     <link rel="stylesheet" type="text/css" media="screen" href="styles/creative.css" />
     <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl"
     crossorigin="anonymous"></script>
+    <!--JQuary-->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    
 
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -65,18 +68,36 @@
                     <input id="image_title" type="text" class="validate">
                     <label for="image_title">Title</label>
                   </div>
-                </div>       
+                </div> 
+                <div class="row">
+                  <div class="input-field col s12">
+                    <textarea id="image_category" type="text" class="materialize-textarea validate"></textarea>
+                    <label for="image_category">Category</label>
+                  </div>
+                </div>        
                 <div class="row">
                   <div class="input-field col s12">
                     <textarea id="image_description" type="text" class="materialize-textarea validate"></textarea>
                     <label for="image_description">Description</label>
                   </div>
-                </div>             
+                </div> 
+                <div class="row">
+                  <div class="input-field col s12">
+                    <textarea id="price" type="text" class="materialize-textarea validate"></textarea>
+                    <label for="price">Price</label>
+                  </div>
+                </div>  
+                <div class="row">
+                  <div class="input-field col s12">
+                    <textarea id="quantity" type="text" class="materialize-textarea validate"></textarea>
+                    <label for="quantity">Quantity</label>
+                  </div>
+                </div>              
               </form>
             </div>
           </div>
           <div class="modal-footer">
-            <a class=" modal-action modal-close waves-effect waves-green btn-flat">Submit</a>
+            <a class=" modal-action modal-close waves-effect waves-green btn-flat" id="addSubmit">Submit</a>
           </div>
         </div>
 
@@ -158,5 +179,8 @@
   });
 
     </script>
+
+    <script type="text/javascript" src="js/gallery.js"></script>
+
   </body>
 </html>

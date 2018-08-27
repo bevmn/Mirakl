@@ -1,24 +1,61 @@
 var db = require("../models");
 
 module.exports = function(app) {
-  // Load index page
+  // Load index/home page
   app.get("/", function(req, res) {
-    db.Example.findAll({}).then(function(dbExamples) {
-      res.render("index", {
-        msg: "Welcome!",
-        examples: dbExamples
-      });
-    });
+    res.sendFile(path.join(__dirname, "../public/index.html"));
   });
 
-  // Load example page and pass in an example by id
-  app.get("/example/:id", function(req, res) {
-    db.Example.findOne({ where: { id: req.params.id } }).then(function(dbExample) {
-      res.render("example", {
-        example: dbExample
-      });
-    });
+  // Load gallery page
+  app.get("/gallery", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/gallery.html"));
   });
+
+  // app.get("/gallery", function(req, res) {
+  //   db.Example.findAll({}).then(function(dbExamples) {
+  //     res.json(results)
+  // });
+  
+  // Load buyer page
+  app.get("/buyer", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/buyer.html"));
+  });
+
+  // app.get("/seller", function(req, res) {
+  //   db.Example.findOne({ where: { id: req.params.id } }).then(function(dbExample) {
+  //     res.render("example", {
+  //       example: dbExample
+  //     });
+  //   });
+  // });
+
+
+
+  // Load cart page
+  app.get("/cart", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/cart.html"));
+  });
+
+  // app.get("/buyer", function(req, res) {
+  //   db.Example.findOne({ where: { id: req.params.id } }).then(function(dbExample) {
+  //     res.render("example", {
+  //       example: dbExample
+  //     });
+  //   });
+  // });
+
+  // Load seller page
+  app.get("/seller", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/seller.html"));
+  });
+
+  // app.get("/seller", function(req, res) {
+  //   db.Example.findOne({ where: { id: req.params.id } }).then(function(dbExample) {
+  //     res.render("example", {
+  //       example: dbExample
+  //     });
+  //   });
+  // });
 
   // Render 404 page for any unmatched routes
   app.get("*", function(req, res) {
