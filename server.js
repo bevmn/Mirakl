@@ -1,4 +1,4 @@
-// require("dotenv").config();
+require("dotenv").config();
 var express = require("express");
 var bodyParser = require("body-parser");
 var exphbs = require("express-handlebars");
@@ -14,6 +14,7 @@ app.use(bodyParser.json());
 app.use(express.static("public"));
 
 // Handlebars
+
 app.engine(
   "handlebars",
   exphbs({
@@ -26,7 +27,7 @@ app.set("view engine", "handlebars");
 require("./routes/apiRoutes")(app);
 require("./routes/htmlRoutes")(app);
 
-var syncOptions = { force: false };
+var syncOptions = { force: true };
 
 // If running a test, set syncOptions.force to true
 // clearing the `testdb`
