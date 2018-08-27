@@ -22,14 +22,14 @@
       <nav class="teal lighten-4">
         <div class="container">
           <div class= "nav-wrapper">
-            <a href="#" class="brand-logo center"><h1>Artsy</h1></a>
+            <a href="#" class="brand-logo"><h1>Artsy</h1></a>
             <a href="#" data-target="nav-mobile" class="sidenav-trigger">
               <i class="material-icons">menu</i>
             </a>
-            <ul class="left hide-on-med-and-down">
+            <ul class="right hide-on-med-and-down">
              <li><a class="waves-effect waves-light btn-flat modal-trigger" href="#modal1">Log In</a></li>
              <li><a class="waves-effect waves-light btn-flat modal-trigger" href="#modal1">Sign Up</a></li>
-             <li><a href="gallery.html">Gallery</a></li>
+             <li><a href="gallery.html">GALLERY</a></li>
              <li><a href="cart.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i>
              </a></li>
             </ul>
@@ -40,7 +40,6 @@
     <ul class="sidenav" id="nav-mobile">
         <li><a href="#signIn">Log In</a></li>
         <li><a href="#signUp">Sign Up</a></li>
-        <li><a href="buyer.html">Buyers</a></li>
         <li><a href="seller.html">Sellers</a></li>
         <li><a href="gallery.html">Gallery</a></li>
         <li><a href="cart.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i>
@@ -77,22 +76,43 @@
             </div>
           </div>
           <div class="modal-footer">
-            <a class=" modal-action modal-close waves-effect waves-green btn-flat">Submit</a>
+            <a id='signUp' class=" modal-action modal-close waves-effect waves-green btn-flat">Submit</a>
           </div>
         </div>
 
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+              <h4>Welcome!</h4>
+        
+              <div class="row">
+                <form class="col s12">
+                    <div class="row modal-form-row">
+                      <div class="input-field col s12">
+                        <!-- <input id="username" type="text" class="validate">
+                        <label for="username">Username</label> -->
+                        <label for="username">Email:</label>
+                        <input id="username" type="email" placeholder="your email" required>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="input-field col s12">
+                        <!-- <input id="Password" type="text" class="validate">
+                        <label for="Password">Password</label> -->
+                        <label for="password">Password:</label>
+                        <input id="password" type="password" placeholder="your password" required>
+                      </div>  
+                    </div>          
+                </form>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <a id='auth' class=" modal-action modal-close waves-effect waves-green btn-flat">Submit</a>
+            </div>
+          </div>
 
-
-
-     <!-- Modal Structure --> 
-     <div id="modal1" class="modal">
-        <div class="modal-content">
-        <h4>Username</h4>
-        <p>Password</p>
-        </div> 
-      </div>
     <!-- // SECTION FOR SLIDER -->
     <section class="slider">
+
         <div class="slider">
             <ul class="slides">
               <li>
@@ -134,19 +154,19 @@
          <div class="row">
             <div class="col s12">
                 <h4>Connect</h4>
-                <a href="#" class="black-text center">
+                <a href="https://www.facebook.com/" class="black-text center">
                   <i class="fab fa-facebook fa-2x"></i>
                 </a>
-                <a href="#" class="black-text center">
+                <a href="https://twitter.com/" class="black-text center">
                   <i class="fab fa-twitter fa-2x"></i>
                 </a>
-                <a href="#" class="black-text center">
+                <a href="https://myaccount.google.com/intro" class="black-text center">
                   <i class="fab fa-google plus fa-2x"></i>
                 </a>
-                <a href="#" class="black-text center">
+                <a href="https://www.linkedin.com/" class="black-text center">
                   <i class="fab fa-linkedin fa-2x"></i>
                 </a>
-                <a href="#" class="black-text center">
+                <a href="https://www.pinterest.com/" class="black-text center">
                   <i class="fab fa-pinterest fa-2x"></i>
                 </a>
             </div>
@@ -209,6 +229,7 @@
   });
 
     </script>
+    <script src="./js/index.js"></script>
   </body>
 </html>
       
