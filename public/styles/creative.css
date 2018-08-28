@@ -53,6 +53,10 @@ main {
 
 .gallery-content {
     flex: 1 0 auto;
+    /* background-image: url("/img/abstract-acrylic-art-1000366.jpg"); */
+    /* background-image: "https://www.pexels.com/photo/photo-of-paint-splatter-artwork-1000366/" */
+    background-image: url("https://images.pexels.com/photos/1000366/pexels-photo-1000366.jpeg?auto=compress&cs=tinysrgb&h=350");
+
 }
 
 .footer {
