@@ -13,7 +13,9 @@ body {
     /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover;
+    
 }
 
 nav h1 {
@@ -24,21 +26,16 @@ nav h1 {
     display:inline-block;
     vertical-align:top;
     line-height: 0%;
-   
 }
 
 .fa-shopping-cart {
     color: rgba(24, 17, 17, 0.509);
 }
-/* .brand-logo {
-    position: 0;
-    display: inline-block;
-
-} */
 
 main {
     flex: 1 0 auto;
 }
+
 
 .brand-logo {
     font-family: cursive;
@@ -52,8 +49,12 @@ main {
     flex-shrink: 0; 
 }
 
-.content {
+.gallery-content {
     flex: 1 0 auto;
+    /* background-image: url("/img/abstract-acrylic-art-1000366.jpg"); */
+    /* background-image: "https://www.pexels.com/photo/photo-of-paint-splatter-artwork-1000366/" */
+    background-image: url("https://images.pexels.com/photos/1000366/pexels-photo-1000366.jpeg?auto=compress&cs=tinysrgb&h=350");
+
 }
 
 .footer {
