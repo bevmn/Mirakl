@@ -1,8 +1,13 @@
 // Get references to page elements
 var $exampleText = $("#example-text");
 var $exampleDescription = $("#example-description");
+<<<<<<< HEAD
 var auth = $("#auth");
 var logIn = $("#logIn");
+=======
+var $signUp = $("#signUp");
+var $logIn = $("#logIn");
+>>>>>>> master
 var $exampleList = $("#example-list");
 
 // The API object contains methods for each kind of request we'll make
