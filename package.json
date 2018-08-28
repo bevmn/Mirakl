@@ -4,7 +4,7 @@
   "description": "Project 2 Starter",
   "main": "server.js",
   "engine": {
-    "version": 8.11.4
+    "version": "8.11.4"
    },
    "scripts": {
      "lint": "eslint **/*.js --quiet", "fix": "eslint --fix .",
