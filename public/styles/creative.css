@@ -13,18 +13,38 @@ body {
     /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover;
+    
 }
+
+nav h1 {
+    padding: 0px;
+    text: rgba(24, 17, 17, 0.509);
+    /* margin: 0px; */
+    text-align: center;
+    display:inline-block;
+    vertical-align:top;
+    line-height: 0%;
+   
+  }
+  
+  .fa-shopping-cart {
+    color: rgba(24, 17, 17, 0.509);
+  }
 
 main {
     flex: 1 0 auto;
   }
+
 .brand-logo {
     font-family: cursive;
     font-size: 40px;
     font-weight: 300;
+    float: left;
 
 }
+
 .section-follow .fa-2x{
     margin: 5px 10px;
     flex-shrink: 0;
