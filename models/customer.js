@@ -8,4 +8,4 @@ module.exports = function(sequelize, DataTypes) {
         zip_: { type: DataTypes.STRING },
     });
     return Customer;
-    };
+};
