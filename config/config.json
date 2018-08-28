@@ -3,14 +3,14 @@
     "username": "root",
     "password": "root",
     "database": "artsy_db",
-    "host": "localhost",
+    "host": "127.0.0.1",
     "dialect": "mysql"
   },
   "test": {
     "username": "root",
     "password": "root",
     "database": "testdb",
-    "host": "localhost",
+    "host": "127.0.0.1",
     "dialect": "mysql",
     "logging": false
   },
