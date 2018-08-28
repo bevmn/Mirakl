@@ -14,6 +14,16 @@ app.use(bodyParser.json());
 app.use(express.static("public"));
 
 <<<<<<< HEAD
+// // Handlebars
+// app.engine(
+//   "handlebars",
+//   exphbs({
+//     defaultLayout: "main"
+//   })
+// );
+// app.set("view engine", "handlebars");
+=======
+<<<<<<< HEAD
 =======
 // Handlebars
 
@@ -24,6 +34,7 @@ app.engine(
   })
 );
 app.set("view engine", "handlebars");
+>>>>>>> master
 
 >>>>>>> 8e221b1d8155a5cf2e8f1f067fdb6f9b1b43f7f2
 // Routes
@@ -39,14 +50,14 @@ if (process.env.NODE_ENV === "test") {
 }
 
 // Starting the server, syncing our models ------------------------------------/
-// db.sequelize.sync(syncOptions).then(function() {
-//   app.listen(PORT, function() {
-//     console.log(
-//       "==> 🌎  Listening on port %s. Visit http://localhost:%s/ in your browser.",
-//       PORT,
-//       PORT
-//     );
-//   });
-// });
+db.sequelize.sync(syncOptions).then(function() {
+  app.listen(PORT, function() {
+    console.log(
+      "==> 🌎  Listening on port %s. Visit http://localhost:%s/ in your browser.",
+      PORT,
+      PORT
+    );
+  });
+});
 
 module.exports = app;
