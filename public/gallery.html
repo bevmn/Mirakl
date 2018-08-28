@@ -1,19 +1,24 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Artsy</title>
-    <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!--Import materialize.css-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="styles/styles.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="styles/creative.css" />
-    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl"
-    crossorigin="anonymous"></script>
 
-    <!--Let browser know website is optimized for mobile-->
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Artsy</title>
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+  <link rel="stylesheet" type="text/css" media="screen" href="styles/styles.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="styles/creative.css" />
+  <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl"
+    crossorigin="anonymous"></script>
+    <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery.js"></script>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+  <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   </head>
 
@@ -22,7 +27,7 @@
       <nav class="teal lighten-4">
         <div class="container">
           <div class= "nav-wrapper">
-            <a href="index.html" class="brand-logo"><h1>Artsy</h1></a>
+            <a href="./index.html" class="brand-logo"><h1>Artsy</h1></a>
             <a href="#" data-target="nav-mobile" class="sidenav-trigger">
               <i class="material-icons">menu</i>
             </a>
@@ -57,46 +62,64 @@
         <li><a href="cart.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i>
         </a></li>
     </ul>
-        <!-- Modal Trigger -->
-        <button class="waves-effect waves-light btn modal-trigger" data-target="modal1">Add Artwork</button>
-      
-        <!-- Modal Structure -->
-        <div id="modal1" class="modal">
-          <div class="modal-content">
-            <h4>Add an Image</h4>
-      
-            <div class="row">
-              <form class="col s12">
-                <div class="row modal-form-row">
-                  <div class="input-field col s12">
-                    <input id="image_url" type="text" class="validate">
-                    <label for="image_url">Image URL</label>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="input-field col s12">
-                    <input id="image_title" type="text" class="validate">
-                    <label for="image_title">Title</label>
-                  </div>
-                </div>       
-                <div class="row">
-                  <div class="input-field col s12">
-                    <textarea id="image_description" type="text" class="materialize-textarea validate"></textarea>
-                    <label for="image_description">Description</label>
-                  </div>
-                </div>             
-              </form>
+
+     <!-- Modal Trigger -->
+  <button class="waves-effect waves-light btn modal-trigger" data-target="modal1">Add Artwork</button>
+
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>Add an Image</h4>
+
+      <div class="row">
+        <form class="col s12">
+          <div class="row modal-form-row">
+            <div class="input-field col s12">
+              <input id="image_url" type="text" class="validate">
+              <label for="image_url">Image URL</label>
             </div>
           </div>
-          <div class="modal-footer">
-            <a class=" modal-action modal-close waves-effect waves-green btn-flat">Submit</a>
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="image_title" type="text" class="validate">
+              <label for="image_title">Title</label>
+            </div>
           </div>
-        </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="category" type="text" class="validate">
+              <label for="category">Category</label>
+            </div>
+          </div>
+                    <div class="row">
+            <div class="input-field col s12">
+              <textarea id="artist" type="text" class="materialize-textarea validate"></textarea>
+              <label for="artist">Artist</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="price" type="text" class="validate">
+              <label for="price">Price</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="quantity" type="text" class="validate">
+              <label for="quantity">Quantity</label>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <a class=" modal-action modal-close waves-effect waves-green btn-flat" id="add-btn">Submit</a>
+    </div>
+  </div>
 
 <!-- EMPTY DIV TO POST PICTURES INTO AND PULL FROM/POST TO THE DATABASE-->
         <div class="gallery-content"></div>
         
-
         <section class="section section-follow teal lighten-4 black-text center">
           <div class="container">
              <div class="row">
@@ -121,29 +144,24 @@
              </div>
           </div>
         </section>
-
-    <!--JavaScript at end of body for optimized loading-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
-    <script>
+      
+  <!--JavaScript at end of body for optimized loading-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+    
+  <script> 
     // SideNav
-    document.addEventListener('DOMContentLoaded', function() {
-        var elems = document.querySelectorAll('.sidenav');
-        var instances = M.Sidenav.init(elems);
+    document.addEventListener('DOMContentLoaded', function () {
+      var elems = document.querySelectorAll('.sidenav');
+      var instances = M.Sidenav.init(elems);
     });
-    // SLIDER
-    // document.addEventListener('DOMContentLoaded', function() {
-    //     var elems = document.querySelectorAll('.slider');
-    //     var instances = M.Slider.init(elems, {
-    //         indicators: false,
-    //         height: 500,
-    //         interval: 15000,
-    //     });
-    // });
-    document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.modal');
-    var instances = M.Modal.init(elems);
-  });
 
-    </script>
-  </body>
+    document.addEventListener('DOMContentLoaded', function () {
+      var elems = document.querySelectorAll('.modal');
+      var instances = M.Modal.init(elems);
+    });
+  </script>
+
+  <script src="js/gallery.js" type="text/javascript"></script>
+</body>
+
 </html>

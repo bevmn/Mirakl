@@ -26,29 +26,27 @@ nav h1 {
     display:inline-block;
     vertical-align:top;
     line-height: 0%;
-   
-  }
-  
-  .fa-shopping-cart {
+}
+
+.fa-shopping-cart {
     color: rgba(24, 17, 17, 0.509);
-  }
+}
 
 main {
     flex: 1 0 auto;
-  }
+}
+
 
 .brand-logo {
     font-family: cursive;
-    font-size: 40px;
+    font-size: 80px;
     font-weight: 300;
     float: left;
-
 }
 
 .section-follow .fa-2x{
     margin: 5px 10px;
-    flex-shrink: 0;
-  
+    flex-shrink: 0; 
 }
 
 .gallery-content {
@@ -67,5 +65,22 @@ main {
     position: relative;
     text-align: center;
 
+}
+
+.divStyle {
+    background-color: aliceblue;
+    color: grey;
+    width: 300px;
+    padding: 10px;
+    border: 3px solid black;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    margin: 20px;
+}
+
+.divImg {
+    max-width: 270px;
+    max-height: 270px;
+    border: 3px solid black;
 }
     
