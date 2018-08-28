@@ -3,7 +3,11 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<<<<<<< HEAD
     <title>Artsy/Mipicasso</title>
+=======
+    <title>Artsy</title>
+>>>>>>> 8e221b1d8155a5cf2e8f1f067fdb6f9b1b43f7f2
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
@@ -44,6 +48,7 @@
         <li><a href="#cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i>
         </a></li>
     </ul>
+<<<<<<< HEAD
 
     <!-- // SECTION FOR SLIDER -->
     <section class="slider">
@@ -112,12 +117,80 @@
     <footer class="section teal lighten-5 black-text center">
         <p class="flow-text">Artsy &copy; 2018</p>
     </footer> -->
+=======
+        <!-- Modal Trigger -->
+        <button class="waves-effect waves-light btn modal-trigger" data-target="modal1">Add Artwork</button>
+      
+        <!-- Modal Structure -->
+        <div id="modal1" class="modal">
+          <div class="modal-content">
+            <h4>Add an Image</h4>
+      
+            <div class="row">
+              <form class="col s12">
+                <div class="row modal-form-row">
+                  <div class="input-field col s12">
+                    <input id="image_url" type="text" class="validate">
+                    <label for="image_url">Image URL</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-field col s12">
+                    <input id="image_title" type="text" class="validate">
+                    <label for="image_title">Title</label>
+                  </div>
+                </div>       
+                <div class="row">
+                  <div class="input-field col s12">
+                    <textarea id="image_description" type="text" class="materialize-textarea validate"></textarea>
+                    <label for="image_description">Description</label>
+                  </div>
+                </div>             
+              </form>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <a class=" modal-action modal-close waves-effect waves-green btn-flat">Submit</a>
+          </div>
+        </div>
+
+<!-- EMPTY DIV TO POST PICTURES INTO AND PULL FROM/POST TO THE DATABASE-->
+        <div class="gallery-content"></div>
+        
+
+    <footer class="section teal lighten-5 black-text" id="seller-footer">
+      <p class="col 6 text left">Artsy &copy; 2018</p>
+        <div class="container">
+          <div class="row">
+            <div class="col s6 m6 l6">
+                <h4>Connect</h4>
+                <a href="#" class="black-text right">
+                    <i class="fab fa-facebook fa-2x"></i>
+                </a>
+                <a href="#" class="black-text right">
+                    <i class="fab fa-twitter fa-2x"></i>
+                </a>
+                <a href="#" class="black-text right">
+                    <i class="fab fa-google plus fa-2x"></i>
+                </a>
+                <a href="#" class="black-text right">
+                    <i class="fab fa-linkedin fa-2x"></i>
+                </a>
+                <a href="#" class="black-text right">
+                    <i class="fab fa-pinterest fa-2x"></i>
+                </a>
+            </div>
+          </div>
+        </div>
+    </footer>
+>>>>>>> 8e221b1d8155a5cf2e8f1f067fdb6f9b1b43f7f2
 
   <!-- <nav> 
          <div class="nav-wrapper">
           <a href="#" class="brand-logo">Mipicasso</a>
           <ul id="nav-mobile" class="right hide-on-med-and-down">
             <li>
+<<<<<<< HEAD
                 <!-- Modal Trigger -->
   <!-- <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Sign In</a> -->
 
@@ -128,6 +201,13 @@
       <p>Password</p>
     </div>
     <div class="modal-footer">
+=======
+               Modal Trigger -->
+  <!-- <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Sign In</a> -->
+
+ 
+    <!-- <div class="modal-footer">
+>>>>>>> 8e221b1d8155a5cf2e8f1f067fdb6f9b1b43f7f2
       <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
     </div> -->
   <!-- </div>
@@ -147,8 +227,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
     <script>
     // SideNav
+<<<<<<< HEAD
     // const SideNav = document.querySelector(".sidenav");
     // M.Sidenav.init(sideNav, {});
+=======
+>>>>>>> 8e221b1d8155a5cf2e8f1f067fdb6f9b1b43f7f2
     document.addEventListener('DOMContentLoaded', function() {
         var elems = document.querySelectorAll('.sidenav');
         var instances = M.Sidenav.init(elems);
@@ -162,6 +245,13 @@
             interval: 15000,
         });
     });
+<<<<<<< HEAD
+=======
+    document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.modal');
+    var instances = M.Modal.init(elems);
+  });
+>>>>>>> 8e221b1d8155a5cf2e8f1f067fdb6f9b1b43f7f2
 
     </script>
   </body>
